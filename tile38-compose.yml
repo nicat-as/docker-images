@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  tile38:
+    image: tile38/tile38
+    container_name: geodb
+    ports:
+      - '9851:9851'
+    logging:
+      options:
+        max-size: 10m
+        max-file: "3"
